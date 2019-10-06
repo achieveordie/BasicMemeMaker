@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bird_img">
+
+    <TextView
+        android:id="@+id/TopText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Top"
+        android:textAllCaps="true"
+        android:textColor="#0C0404"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/BottomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TopText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:gravity="center"
+        android:text="Bottom"
+        android:textAllCaps="true"
+        android:textColor="#110505"
+        android:textSize="35sp" />
+
+</RelativeLayout>
