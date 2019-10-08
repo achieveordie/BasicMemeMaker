@@ -22,6 +22,16 @@ public class TopSectionFragment extends Fragment {
         public void createClick(String top, String bottom );
     }
 
+    @Override
+    public void onAttach(Activity activity){
+        super.onAttach(activity);
+        try{
+            activityCommander = (TopSectionListener) activity;
+        }catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()) ;
+        }
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
